@@ -1,9 +1,9 @@
-**Title: Studey - SwiftUI To-Do List App**
+# Title: Studey - SwiftUI To-Do List App
 
-**Description:**
+## Description:
 Studey is a sophisticated SwiftUI-powered To-Do List app meticulously designed to help students organize their academic tasks with efficiency and style. With a focus on simplicity and powerful functionality, Studey empowers users to create subject-specific categories, set tasks within those categories, and establish deadlines—providing a comprehensive solution for managing academic responsibilities.
 
-**Key Features:**
+## Key Features:
 
 1. **Intuitive Subject Categories:**
    - Studey allows users to create distinct subject categories, providing an organized structure for managing tasks related to different courses or topics. The dynamic SwiftUI interface ensures a seamless experience when adding, editing, or deleting subjects.
