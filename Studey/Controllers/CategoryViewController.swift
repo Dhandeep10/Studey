@@ -35,6 +35,23 @@ class CategoryViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Handle the deletion here
+            let topicToDelete = categories[indexPath.row]
+            context.delete(topicToDelete)
+            
+            do {
+                try context.save()
+            } catch {
+                print("Error deleting topic: \(error)")
+            }
+            
+            categories.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     //MARK: - TableView Delegate Method
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
